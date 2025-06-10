@@ -63,10 +63,11 @@ extension OnboardingViewController {
 
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(label)
-        
+
         view.addSubview(stackView)
-        
+
         NSLayoutConstraint.activate([
+            //Stack View
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 1),
