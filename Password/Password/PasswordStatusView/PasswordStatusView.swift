@@ -165,3 +165,19 @@ extension PasswordStatusView {
         specialCharacterCriteriaView.reset()
     }
 }
+
+
+// MARK: Tests
+extension PasswordCriteriaView {
+    var isCheckMarkImage: Bool {
+        return imageView.image == checkmarkimage
+    }
+
+    var isXmarkImage: Bool {
+        return imageView.image == xmarkimage
+    }
+
+    var isResetImage: Bool {
+        return imageView.image == circleimage
+    }
+}
